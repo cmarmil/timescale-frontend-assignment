@@ -24,6 +24,9 @@ $medium-breakpoint: 960px;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
   background: $primary-light;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .navbar--title,
@@ -52,17 +55,15 @@ $medium-breakpoint: 960px;
   cursor: pointer;
 
   //new styles
-  margin: 0 .5em;
-  padding: .5em 1em;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
 }
 
 .button--filled {
   color: white;
-  border-radius: .2em;
+  border-radius: 0.2em;
 }
 
 .button--state-primary {
   background: $primary;
-} 
-
-
+}
