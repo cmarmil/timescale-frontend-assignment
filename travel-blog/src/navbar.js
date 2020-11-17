@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar--col">
-        <div class="titleContainer">
+        <div className="titleContainer">
           <h3 className="navbar--title">Travelize</h3>
           <p className="navbar--subtitle">
             <em>My Traveling Experiences</em>

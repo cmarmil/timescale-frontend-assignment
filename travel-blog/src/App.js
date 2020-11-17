@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div class="contentContainer">
+      <div className="contentContainer">
         <HeroImage />
       </div>
     </div>
