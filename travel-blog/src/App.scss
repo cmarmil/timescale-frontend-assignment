@@ -6,8 +6,8 @@ $profile-image-width: 300px;
 
 $gutter: 8px;
 $gray: #333;
-$primary: #1977F3;
-$primary-light: #EEF5FE;
+$primary: #1977f3;
+$primary-light: #eef5fe;
 
 $small-breakpoint: 500px;
 $medium-breakpoint: 960px;
@@ -18,3 +18,51 @@ $medium-breakpoint: 960px;
     box-sizing: border-box;
   }
 }
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  background: $primary-light;
+}
+
+.navbar--title,
+.navbar--subtitle {
+  margin: 0.5em 0;
+}
+
+.navbar--col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  flex-direction: column;
+}
+
+.button {
+  //default browser styling reset
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  cursor: pointer;
+
+  //new styles
+  margin: 0 .5em;
+  padding: .5em 1em;
+}
+
+.button--filled {
+  color: white;
+  border-radius: .2em;
+}
+
+.button--state-primary {
+  background: $primary;
+} 
+
+
