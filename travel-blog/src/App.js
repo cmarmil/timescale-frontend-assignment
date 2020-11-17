@@ -1,7 +1,7 @@
-import headshot from "./images/headshot.jpg";
 import Navbar from "./navbar";
 import HeroImage from "./heroImage";
 import ProfileContent from "./profileContent";
+import Footer from "./footer";
 import "./App.scss";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <HeroImage />
         <ProfileContent />
       </div>
+      <Footer/>
     </div>
   );
 }

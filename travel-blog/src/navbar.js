@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="navbar--col">
+      <div className="col--center">
         <div className="titleContainer">
           <h3 className="navbar--title">Travelize</h3>
           <p className="navbar--subtitle">
@@ -9,7 +9,7 @@ function Navbar() {
           </p>
         </div>
       </div>
-      <div className="navbar--col">
+      <div className="col--center">
         <button className="button">Home</button>
         <button className="button">Blog</button>
         <button className="button button--filled button--state-primary">About</button>
