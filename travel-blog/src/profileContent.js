@@ -2,7 +2,7 @@ import headshot from "./images/headshot.jpg";
 
 function ProfileContent() {
   return (
-    <div className="profileContent">
+    <div id="profileContent" className="profileContent">
       <img
         className="profileContent--image"
         src={headshot}
