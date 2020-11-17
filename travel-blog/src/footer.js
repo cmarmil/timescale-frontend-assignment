@@ -5,8 +5,8 @@ function Footer() {
         <p className="footer--copyright">&#169; 2020 Travelize</p>
       </div>
       <div className="col--center">
-        <button className="button button--state-white">Privacy Policy</button>
-        <button className="button button--state-white">Terms and Conditions</button>
+        <button className="button button--color-white">Privacy Policy</button>
+        <button className="button button--color-white">Terms and Conditions</button>
       </div>
     </div>
   );
