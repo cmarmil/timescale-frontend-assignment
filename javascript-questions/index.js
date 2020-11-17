@@ -1,4 +1,4 @@
-const superHeroes = require('./super-heroes.json');
+const superHeroes = require("./super-heroes.json");
 
 /**
  * Will find all of the marvel characters in the data and return them as an array
@@ -10,8 +10,8 @@ const superHeroes = require('./super-heroes.json');
  * ]
  */
 const getDCHeroes = (heroes) => {
-  return heroes;
-}
+  return heroes.filter((hero) => hero.publisher === "DC Comics");
+};
 
 /**
  * Converts the character property into an array
@@ -27,8 +27,9 @@ const getDCHeroes = (heroes) => {
  * ]
  */
 const convertCharactersToArray = (heroes) => {
+  heroes.forEach((hero) => (hero.characters = hero.characters.split(",")));
   return heroes;
-}
+};
 
 /**
  * Coverts super hero data so it is grouped the publisher property
@@ -44,8 +45,14 @@ const convertCharactersToArray = (heroes) => {
  * }
  */
 const groupByPublisher = (heroes) => {
+  heroes = heroes.reduce(function (r, a) {
+    r[a.publisher] = r[a.publisher] || [];
+    r[a.publisher].push(a);
+    return r;
+  }, Object.create(null));
+
   return heroes;
-}
+};
 
 /**
  * Returns and array of DC Comic heroes that have more than 1 character
@@ -61,12 +68,12 @@ const groupByPublisher = (heroes) => {
  * ]
  */
 const getDCHeroesWithMoreThanOneCharacter = (heroes) => {
-  return heroes;
-}
+  return heroes.filter((hero) => hero.characters.length > 1 );
+};
 
 module.exports = {
   convertCharactersToArray,
   getDCHeroes,
   getDCHeroesWithMoreThanOneCharacter,
   groupByPublisher,
-}
+};
