@@ -75,5 +75,32 @@ $medium-breakpoint: 960px;
 .contentContainer {
   width: 95vw;
   margin: 0 auto;
+}
 
+.profileContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 2em;
+  grid-auto-flow: column;
+  width: 70%;
+  margin: 2em auto;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.profileContent--bio {
+  white-space: pre-line;
+}
+
+.profileContent--image {
+  width: 100%;
+  border-radius: 50%;
+  @media (max-width: 768px) {
+    width: 50%;
+    margin: 0 auto;
+  }
 }

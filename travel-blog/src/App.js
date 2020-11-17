@@ -1,6 +1,7 @@
 import headshot from "./images/headshot.jpg";
 import Navbar from "./navbar";
 import HeroImage from "./heroImage";
+import ProfileContent from "./profileContent";
 import "./App.scss";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <div className="contentContainer">
         <HeroImage />
+        <ProfileContent />
       </div>
     </div>
   );
