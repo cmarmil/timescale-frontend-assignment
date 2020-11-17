@@ -6,7 +6,9 @@ function Footer() {
       </div>
       <div className="col--center">
         <button className="button button--color-white">Privacy Policy</button>
-        <button className="button button--color-white">Terms and Conditions</button>
+        <button className="button button--color-white">
+          Terms and Conditions
+        </button>
       </div>
     </div>
   );

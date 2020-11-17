@@ -12,7 +12,12 @@ function Navbar() {
       <div className="col--center">
         <button className="button">Home</button>
         <button className="button">Blog</button>
-        <a href="#profileContent" className="button button--filled button--background-primary">About</a>
+        <a
+          href="#profileContent"
+          className="button button--filled button--background-primary"
+        >
+          About
+        </a>
       </div>
     </div>
   );
